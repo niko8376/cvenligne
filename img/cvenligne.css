@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,
+:after,
+:before {
+    /* Pour le dropdown */
+    box-sizing: inherit;
+}
+
+body {
+    
+}
+
+header {
+    text-align: right;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+header img {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#logo {
+    left: 0;
+    position: absolute;
+    top: 25%;
+}
+
+#logo,
+#menu,
+#btn_connexion,
+.item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+#menu {
+    width: 60%;
+    text-align: right;
+}
+
+.kontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sous_menu {
+    display: none;
+    position: absolute;
+    width: 275px;
+    /* avant c'était 200px*/
+    padding: 22px 29px;
+    font-size: 16px;
+    margin-top: 25px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+
+    .dropdown:after,
+    .dropdown:before {
+        display: block;
+    }
+}
+
+.sous_menu:after,
+.sous_menu:before {
+    width: 23px;
+    height: 23px;
+    background: rgba(255, 255, 255, 1);
+    /*avant #FFFFFF*/
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+    z-index: 1;
+    box-shadow: 1px 1px 1px white, -1px -1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*.bi {
+	box-shadow: 0px -1px 6px rgba(0, 0, 0, 0.2);
+	z-index: -1;
+}*/
+
+.sous_menu:before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    bottom: auto;
+    left: 27px;
+    right: auto;
+}
+
+.sous_menu li {
+    padding: 5px;
+}
+
+#menu>li {
+    padding: 0 0 30px 0;
+    margin-top: 30px;
+}
+
+.item {
+    position: relative;
+    width: auto;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.item:hover .sous_menu {
+    display: block;
+    position: absolute;
+}
+
+
+#btn_connexion {
+    padding: 10px 25px;
+}
+
+.section1{
+    color: #FFFFFF;
+    background-color: rgb(97, 117, 255);
+    
+    }
+    
+    
+    
+    #S1 {
+    
+        vertical-align: middle;
+    
+        width: fit-content;
+    
+        margin: auto;
+    
+        
+    
+        position: relative;
+    
+    }
+    
+    
+    
+    #S1Text,
+    #S1Img {
+    
+        width: fit-content;
+    
+        display: inline-block;
+    
+        vertical-align: middle;
+    
+    }
+    
+     #S1Button {
+    
+        padding: 10px;
+    
+        text-align: center;
+    
+        height: 50px;
+    
+        background-color: rgb(34, 139, 34);
+    
+        text-transform: uppercase;
+    
+        font-weight: bold;
+    
+    }
+    #S1Img {
+    
+        margin: 10px;
+    
+    }
+
+    #S2Button {
+    
+        padding: 10px;
+    
+        text-align: center;
+    
+        height: 50px;
+    
+        background-color: rgb(34, 139, 34);
+    
+        text-transform: uppercase;
+    
+        font-weight: bold;
+    
+    }
+    
+    #S3Button {
+    
+        padding: 10px;
+    
+        text-align: center;
+    
+        height: 50px;
+    
+        background-color: rgb(34, 139, 34);
+    
+        text-transform: uppercase;
+    
+        font-weight: bold;
+    
+    }
+    #S4Button {
+    
+        padding: 10px;
+    
+        text-align: center;
+    
+        height: 50px;
+    
+        background-color: rgb(34, 139, 34);
+    
+        text-transform: uppercase;
+    
+        font-weight: bold;
+    
+    }
+
+    
+    
+    
+    
+    .howto {
+        margin-top: 80px;
+        margin-bottom: 50px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .howto .title-section {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    
+    .howto .subtitle {
+        font-weight: normal;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .howto .card {
+        background: #fff;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.1);
+    }
+    
+    .howto .card .card-header {
+        background: url("../");
+    }
+    
+    .howto .howto-steps {
+        display: flex;
+        margin: 0 -20px;
+    }
+    
+    .howto .howto-steps-item {
+        padding: 0 20px;
+        flex: 0 0 33.33%;
+    }
+    
+    .howto .howto-steps-item img {
+        display: block;
+        width: 100%;
+    }
+    
+    .howto .howto-steps-item .card-text {
+        padding: 16px 20px;
+        text-align: center;
+    }
+    
+    .howto .howto-steps-item .card-text p {
+        margin-bottom: 0;
+        line-height: 20px;
+        color: black;
+    }
+    
+    .howto .howto-steps-item .card-title {
+        display: flex;
+        padding: 16px 20px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .howto .howto-steps-item .card-title p {
+        font-size: 17px;
+        line-height: 22px;
+        color: #181818;
+        margin-bottom: 0;
+    }
+    
+    /* Card it */
+    .howto .howto-steps-item .card-text-it {
+        padding: 16px 20px;
+    }
+    
+    .howto .howto-steps-item .card-text-it p {
+        font-family: Avenir-Book, sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.11;
+        letter-spacing: normal;
+        color: #7e8085;
+    }
+    
+    .howto .howto-steps-item .card-title-it {
+        display: flex;
+        padding: 16px 20px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    
+    .howto .howto-steps-item .card-title-it p {
+        font-family: Avenir-Heavy, sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        color: #181818;
+    }
+    
+    .howto .howto-steps .number {
+        flex: 0 0 47px;
+        width: 47px;
+        height: 47px;
+        margin: 0;
+        font-size: 16px;
+        margin-right: 16px;
+        border-radius: 5px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: #6b79fb;
+    }
+    
+    .howto .howto-cta {
+        margin-top: 50px;
+    }
+    
+    .cvfacile-home .howto .howto-cta {
+        margin-top: 36px;
+    }
+    
+    .howto .howto-cta a {
+        display: inline-flex;
+        margin: 0 auto;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .howto .howto-steps {
+            flex-direction: column;
+        }
+    
+        .howto .howto-steps-item {
+            flex: none;
+            width: 100%;
+            margin: 15px 0;
+        }
+    
+        .howto .howto-cta {
+            margin: 20px 0;
+        }
+    }
+    .button-create-cv-mobile {
+        background-color: #07b045 !important;
+        color: white !important;
+        width: 100% !important;
+        margin-left: 0px !important;
+        height: 50px;
+        padding-top: 17px;
+    }
+    
+    .cvfacile-home .button-create-cv-mobile {
+        background-color: #06b27d !important;
+        height: 60px;
+    }
+    
+    .btn-green {
+        background-color: #228B22 !important;
+        color: white !important;
+    }
+    
+
+    
+    
+    
